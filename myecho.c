@@ -17,16 +17,13 @@ int possuiOpt(char* parametro){
     }else if(strcmp(parametro, opt_enable_escapes) == 0){
         enable_escapes = 1;
         return 1;
-    }
-    else if(strcmp(parametro, opt_disable_escapes) == 0){
+    }else if(strcmp(parametro, opt_disable_escapes) == 0){
         enable_escapes = 0;
         return 1;
-    } else if(strcmp(parametro, opt_version) == 0){
-        enable_escapes = 1;
-        return 1;
-    }else{
-        return 0;
-    }
+    }else if(strcmp(parametro, opt_version) == 0){
+        printf("echo 1.0\nCopyright (C) 2026 Júlio César\n");
+        exit(0);
+    }else return 0;
 }
 
 int main(int argc, char *argv[]){
